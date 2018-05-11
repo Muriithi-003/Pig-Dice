@@ -1,0 +1,27 @@
+.moja {
+  font-size: 100px;
+  color: green;
+}
+.moja :hover {
+  opacity: 0.5;
+}
+body {
+  background-color: white;
+}
+.mbili :hover {
+  color: green;
+}
+.tatu {
+  color: green;
+}
+.nne {
+  text-align: center;
+  padding-bottom: 40px;
+  color: green;
+  font-size: 40px;
+}
+.tano {
+  color: green;
+  font-size: 30px;
+  padding-left: 60px;
+}
