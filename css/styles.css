@@ -25,3 +25,28 @@ body {
   font-size: 30px;
   padding-left: 60px;
 }
+.sita {
+  color: green;
+  border: solid green;d;
+}
+#player-msg {
+  font-size: 60px;
+}
+#player-one-name {
+  font-size: 40px;
+}
+#player-two-name {
+  font-size: 40px;
+}
+button {
+  font-size: 30px;
+}
+.nane {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  color: black;
+}
+.nane :hover {
+  color: green;
+}

@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Pig Dice</title>
-  </head>
-  <body>
-    <div class="container">
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>Pig Dice</title>
+</head>
+<body>
+  <div class="container">
     <div class="jumbotron">
       <div class="moja"><img src="img/b.png" alt="">PIG DICE</div>
     </div>
     <div class="mbili">
-    <h2>Rules</h2>
-    <ul>
-      <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
-      <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-      <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-    </ul><br><br><br>
-  </div>
-    <div class="nne">
-    <button><i>PLAY!!</i></button>
-  </div>
-  <div class="tano">
-    <div class="row">
-      <div class="col-md-6">
-        <p>PLAYER ONE</p>
-      </div>
-      <div class="col-md-6">
-        <p>PLAYER TWO</p>
-      </div>
-
+      <h2>Rules</h2>
+      <ul>
+        <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+        <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+        <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+        <li>The first player to score 100 or more points wins.</li>
+      </ul><br><br><br>
     </div>
-  </div>
+    <div class="nne">
+      <button type="button" name="button1"><i>PLAY!!</i></button>
+    </div>
+    <div class="tano">
+      <div class="col-sm-6 player-setup">
+        <div class="nane"><strong>Players</strong></div>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="player-one-signup">Player One</label>
+            <input id="player-one-signup" class="form-control" type="text" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="player-two-signup">Player Two</label>
+            <input id="player-two-signup" class="form-control" type="text" placeholder="Enter name">
+          </div>
+          <div class="saba">
+          <button type="submit">Play</button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <br>
+    <br><br>
+    <div class="sita">
+      <div class="container game">
+        <div class="row">
+          <div class="col-xs-4">
+            <h3>Player One:</h3>
+            <h4 id="player-one-name"></h4>
+            <p>Score:</p>
+            <p><span class="p1-total-score"></span></p>
+          </div>
+
+          <div class="col-xs-4">
+            <h3>Rolls</h3>
+            <h1 id="rolled-number">...</h1>
+            <h3>Possible Points</h3>
+            <h1 id="rolled-total">0</h1>
+            <button id="roll">Roll</button>
+            <button id="hold" disabled="true">Hold</button>
+            <br>
+            <br>
+            <strong><p id="player-msg"></p></strong>
+            <p id="player-turn-score"></p>
+          </div>
+
+          <div class="col-xs-4">
+            <h3>Player Two:</h3>
+            <h4 id="player-two-name"></h4>
+            <p>Score:</p>
+            <p><span class="p2-total-score"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"></script>
-      <script src="js/scripts.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
 
-  </body>
-</html>
+      </body>
+      </html>
