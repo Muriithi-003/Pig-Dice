@@ -11,9 +11,7 @@ $(document).ready(function () {
     $(".tano").hide();//hides the div when the page loads and shows once the button is pressed
   });
 });
-
 // Business Logic
-
 var Player = function(turn) {
   this.scoreTotal = 0;
   this.currentScore = 0;
@@ -28,7 +26,6 @@ Player.prototype.takeTurn = function() {
     this.turn = true;
   }
 };
-
 Player.prototype.roll = function() {
   var rand = Math.floor(Math.random() * 6) + 1;
   this.currentScore = rand;
