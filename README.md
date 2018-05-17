@@ -1,4 +1,4 @@
-PIG DICE
+###PIG DICE
 By Muriithi Vionna
 Description
 Pig is one of a family of dice games where players gains by rolling for potential greater gains.
